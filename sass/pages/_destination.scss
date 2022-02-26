@@ -1,0 +1,99 @@
+.destination {
+  background-image: url(../assets/destination/background-destination-desktop.jpg);
+  display: grid;
+  grid-template-rows: min-content 1fr;
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding-bottom: 10vh;
+  @include respond(tab-port) {
+    background-image: url(../../assets/destination/background-destination-tablet.jpg);
+  }
+  @include respond(tab-port) {
+    background-image: url(../../assets/destination/background-destination-mobile.jpg);
+  }
+
+  &__content {
+    display: grid;
+    grid-template-columns:
+      [stretch-start] minmax(1rem, 1fr) [full-start pic-start]
+      minmax(25rem, 45vw) [pic-end content-start] minmax(25rem, 35vw)
+      [content-end] minmax(1rem, 1fr) [stretch-end];
+
+    grid-template-rows: repeat(3, min-content);
+    gap: 2rem;
+    @include respond(tab-port) {
+      grid-template-columns:
+        minmax(1rem, 1fr) [center-start]
+        minmax(30rem, 95vw) [center-end]
+        minmax(1rem, 1fr);
+      grid-template-rows: repeat(4, min-content);
+    }
+  }
+
+  &__img {
+    grid-column: pic-start/pic-end;
+    grid-row: 3/4;
+    margin-top: -3rem;
+    max-width: 80%;
+    align-self: center;
+    @include respond(tab-port) {
+      grid-column: center-start/center-end;
+      grid-row: 2/3;
+      margin: 2rem 0;
+      justify-self: center;
+      max-width: 60%;
+    }
+  }
+  &__about {
+    grid-column: content-start/content-end;
+    grid-row: 3/4;
+    @include respond(tab-port) {
+      grid-column: center-start/center-end;
+      grid-row: 4/-1;
+      max-width: 80%;
+      justify-self: center;
+      text-align: center;
+    }
+  }
+
+  .destination__content .nav {
+    grid-column: content-start/content-end;
+    grid-row: 2/3;
+    padding: 0;
+    background: none;
+    justify-self: left;
+    backdrop-filter: none;
+    color: var(--color-secondary);
+    @include respond(tab-port) {
+      grid-column: center-start/center-end;
+      grid-row: 3/4;
+      max-width: 60%;
+      justify-self: center;
+    }
+    &__list {
+      gap: 1rem;
+    }
+    &__items {
+      padding: 0 1.5rem;
+    }
+    &__link:link,
+    &__link:visited {
+      padding: 1rem 0;
+    }
+  }
+
+  .travel__detail {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .destination__content .pent-heading {
+    grid-column: pic-start/pic-end;
+    grid-row: 1/2;
+    @include respond(tab-port) {
+      grid-column: center-start/center-end;
+    }
+  }
+}

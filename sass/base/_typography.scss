@@ -1,0 +1,59 @@
+.body-text {
+  color: #d0d6f9;
+  line-height: 1.2;
+  letter-spacing: 2;
+  padding-right: 30%;
+}
+
+.sub_heading1 {
+  color: #d0d6f9;
+  text-transform: uppercase;
+}
+
+.sub_heading2 {
+  margin-top: 1.4rem;
+  font-size: 2.8rem;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.primary-heading {
+  font-size: 12rem;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+.secondary-heading {
+  font-size: 5.2rem;
+  color: white;
+  text-transform: uppercase;
+}
+.tertiary-heading {
+  font-size: 2.4rem;
+  color: #adb5bd;
+  text-transform: uppercase;
+}
+
+.pent-heading {
+  font-size: 2rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--color-white);
+  span {
+    color: var(--color-grey-dark);
+    margin-right: 1.2rem;
+    font-family: inherit;
+  }
+}
+
+.description {
+  font-size: 1.8rem;
+  font-family: inherit;
+  color: var(--color-primary);
+  line-height: 1.2;
+  letter-spacing: 0.5px;
+  @include respond(tab-port) {
+    font-size: 2rem;
+  }
+}

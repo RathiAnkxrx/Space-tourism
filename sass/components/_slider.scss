@@ -1,0 +1,26 @@
+.slider__container {
+  gap: 1.2rem;
+  list-style: none;
+  color: white;
+  margin-bottom: 3.4rem;
+  display: flex;
+}
+
+.slider:link,
+.slider:visited {
+  display: block;
+  text-decoration: none;
+  width: 1.2rem;
+  height: 1.2rem;
+  border-radius: 50%;
+  background-color: #495057;
+}
+
+.slider:active,
+.slider:hover {
+  background-color: var(--color-grey-dark-1);
+}
+
+.slider.active {
+  background-color: #ced4da;
+}

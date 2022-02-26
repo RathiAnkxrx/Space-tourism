@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Space tourism website</title>
+
+    <!-- FONT FAMILY -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bellefair&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS LINKS -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- javascript -->
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <div class="destination">
+      <header class="header">
+        <div class="header__logo">
+          <img
+            src="assets/shared/logo.svg"
+            alt="space-logo"
+            class="header__logo-brand"
+          />
+        </div>
+        <div class="header__line">&nbsp;</div>
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__items">
+              <a href="index.html" class="nav__link"><span>00</span>Home</a>
+            </li>
+            <li class="nav__items">
+              <a href="destination-moon.html" class="nav__link"
+                ><span>01</span>Destination</a
+              >
+            </li>
+            <li class="nav__items">
+              <a href="crew-commander.html" class="nav__link"
+                ><span>02</span>Crew</a
+              >
+            </li>
+            <li class="nav__items">
+              <a href="technology-capsule.html" class="nav__link"
+                ><span>03</span>Technology</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <section class="destination__content">
+        <h5 class="pent-heading u-margin-top-small">
+          <span>01</span>Pick your destination
+        </h5>
+        <img
+          src="assets/destination/image-moon.png"
+          alt="moon-pic"
+          class="destination__img"
+        />
+
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__items">
+              <a href="destination-moon.html" class="nav__link">Moon</a>
+            </li>
+            <li class="nav__items">
+              <a href="destination-mars.html" class="nav__link">Mars</a>
+            </li>
+            <li class="nav__items">
+              <a href="destination-europa.html" class="nav__link">Europa</a>
+            </li>
+            <li class="nav__items">
+              <a href="destination-titan.html" class="nav__link">Titan</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="destination__about">
+          <h1 class="primary-heading u-margin-bottom-small">Moon</h1>
+          <p class="description u-margin-bottom-medium">
+            See our planet as you’ve never seen it before. A perfect relaxing
+            trip away to help regain perspective and come back refreshed. While
+            you’re there, take in some history by visiting the Luna 2 and Apollo
+            11 landing sites.
+          </p>
+          <hr />
+          <div class="travel__detail u-margin-top-small">
+            <div class="distance">
+              <p class="sub_heading1">Avg. distance</p>
+              <p class="sub_heading2">384,400 km</p>
+            </div>
+            <div class="time">
+              <p class="sub_heading1">Est. travel time</p>
+              <p class="sub_heading2">3 days</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

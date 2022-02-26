@@ -1,0 +1,116 @@
+.technology {
+  background-image: url(../../assets/technology/background-technology-desktop.jpg);
+  display: grid;
+  grid-template-rows: min-content 1fr;
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  &__content {
+    display: grid;
+    grid-template-columns:
+      minmax(5rem, 1fr) [ nav-start]
+      minmax(min-content, max-content) [nav-end content-start]
+      minmax(25rem, 50vw) [content-end pic-start] minmax(25rem, 35vw)
+      [pic-end];
+    grid-template-rows: repeat(2, max-content);
+    gap: 2rem;
+    align-self: flex-end;
+    padding: 10vh 0;
+    @include respond(tab-port) {
+      grid-template-columns:
+        [full-start] minmax(1rem, 1fr) [content-start]
+        minmax(1rem, 95vw) [content-end]
+        minmax(1rem, 1fr) [full-end];
+      grid-template-rows: repeat(4, min-content);
+    }
+  }
+  &__about {
+    grid-column: content-start/content-end;
+    grid-row: 2/-1;
+    align-self: center;
+    max-width: 80%;
+    @include respond(tab-port) {
+      grid-column: content-start/content-end;
+      grid-row: 4/-1;
+      text-align: center;
+      max-width: 65%;
+      margin: 0 auto;
+    }
+    @include respond(phone) {
+      max-width: 100%;
+    }
+  }
+  &__img {
+    grid-column: pic-start/pic-end;
+    grid-row: 2/-1;
+    max-width: 100%;
+    @include respond(tab-port) {
+      grid-column: full-start/full-end;
+      grid-row: 2/3;
+    }
+  }
+  &__nav {
+    grid-column: nav-start/nav-end;
+    grid-row: 2/-1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    list-style: none;
+    height: 100%;
+    margin-right: 5vw;
+    gap: 2rem;
+
+    @include respond(tab-port) {
+      grid-column: content-start/content-end;
+      grid-row: 3/4;
+      flex-direction: row;
+      margin: 0;
+      padding: 5vh 0;
+    }
+    &-link:link,
+    &-link:visited {
+      display: inline-block;
+      text-decoration: none;
+      font-size: 2rem;
+      width: 6rem;
+      height: 6rem;
+      border-radius: 100%;
+      border: 1px solid var(--color-grey);
+      justify-content: center;
+      display: flex;
+      align-items: center;
+      font-weight: bold;
+      color: var(--color-white);
+      transition: all 0.4s ease-in;
+    }
+    &-link.active {
+      background-color: white;
+      color: var(--color-secondary);
+    }
+
+    &-link:hover {
+      border: 1px solid var(--color-white);
+    }
+    &-link:active {
+      background-color: white;
+      color: var(--color-secondary);
+    }
+  }
+}
+
+.technology .pent-heading {
+  grid-column: nav-start/pic-end;
+  grid-row: 1/2;
+  @include respond(tab-port) {
+    grid-column: content-start/content-end;
+  }
+}
+
+.machine__img {
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+}

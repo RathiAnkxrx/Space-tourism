@@ -1,0 +1,16 @@
+.home {
+  background-image: url(../assets/home/background-home-desktop.jpg);
+  display: grid;
+  grid-template-rows: min-content 1fr;
+
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: cover;
+  @include respond(tab-port) {
+    background-image: url(../../assets/home/background-home-tablet.jpg);
+  }
+  @include respond(phone) {
+    background-image: url(../../assets/home/background-home-mobile.jpg);
+  }
+}

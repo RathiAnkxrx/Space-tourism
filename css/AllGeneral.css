@@ -1,0 +1,70 @@
+.grid {
+  display: grid;
+}
+
+.grid-2-column {
+  grid-template-columns: 60fr 40fr;
+}
+
+.grid-4-column {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.flex {
+  display: flex;
+}
+
+.primary-heading {
+  font-size: 13rem;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: 400;
+  margin-bottom: 3.4rem;
+}
+.secondary-heading {
+  font-size: 5.2rem;
+  color: white;
+  text-transform: uppercase;
+  margin: 1.8rem 0 2.4rem 0;
+}
+.tertiary-heading {
+  margin-top: 6.4rem;
+  font-size: 2.4rem;
+  color: #adb5bd;
+  text-transform: uppercase;
+}
+
+.pent-heading {
+  font-size: 2.4rem;
+  letter-spacing: 4.75px;
+  color: #d0d6f9;
+  text-transform: uppercase;
+  margin-bottom: 15vh;
+}
+
+.section-header {
+  padding: 6.4rem 0 0 4.8rem;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.container {
+  max-width: 130rem;
+  padding: 4.8rem;
+}
+
+.space-logo {
+  position: relative;
+}
+.brand-logo {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 4.8rem;
+  height: 4.8rem;
+}
+
+.section-hero {
+  margin: 30vh auto 0 auto;
+  gap: 10vw;
+}
