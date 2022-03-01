@@ -41,6 +41,12 @@
   position: relative;
   z-index: 10;
 
+  &__hamburger {
+    display: none;
+    margin-right: 4rem;
+    cursor: pointer;
+  }
+
   @include respond(tab-land) {
     padding: 3rem;
   }
@@ -52,8 +58,13 @@
     width: 65vw;
     height: 100%;
     backdrop-filter: blur(15px);
-    padding: 2rem;
+
+    padding: 9.6rem 2rem 2rem 3.4rem;
+    &__hamburger {
+      display: block;
+    }
   }
+
   &__list {
     list-style: none;
     gap: 3.4rem;
@@ -102,4 +113,40 @@
   &__link.active {
     box-shadow: inset 0 -0.3rem var(--color-white);
   }
+}
+
+.close {
+  display: none;
+  cursor: pointer;
+  margin-right: 4rem;
+  position: fixed;
+  top: 4.2rem;
+  right: 1.2rem;
+  z-index: 9999;
+}
+
+.active .close {
+  display: inline;
+}
+
+.active .nav__hamburger {
+  display: none;
+}
+
+.active .nav {
+  display: inline;
+  &__link:hover {
+    box-shadow: none;
+  }
+
+  &__link:active {
+    box-shadow: none;
+  }
+  &__link.active {
+    box-shadow: none;
+  }
+}
+
+.active .header__line {
+  display: none;
 }
