@@ -1,5 +1,5 @@
 .destination {
-  background-image: url(../../assets/destination/background-destination-desktop.jpg);
+  background-image: url(../assets/destination/background-destination-desktop.jpg);
   display: grid;
   grid-template-rows: min-content 1fr;
   min-height: 100vh;
@@ -8,10 +8,10 @@
   background-size: cover;
   padding-bottom: 10vh;
   @include respond(tab-port) {
-    background-image: url(../../assets/destination/background-destination-tablet.jpg);
+    background-image: url(../assets/destination/background-destination-tablet.jpg);
   }
   @include respond(tab-port) {
-    background-image: url(../../assets/destination/background-destination-mobile.jpg);
+    background-image: url(../assets/destination/background-destination-mobile.jpg);
   }
 
   &__content {

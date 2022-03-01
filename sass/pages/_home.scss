@@ -1,5 +1,5 @@
 .home {
-  background-image: url(../../assets/home/background-home-desktop.jpg);
+  background-image: url(../assets/home/background-home-desktop.jpg);
   display: grid;
   grid-template-rows: min-content 1fr;
 
@@ -8,9 +8,9 @@
   background-position: bottom center;
   background-size: cover;
   @include respond(tab-port) {
-    background-image: url(../../assets/home/background-home-tablet.jpg);
+    background-image: url(../assets/home/background-home-tablet.jpg);
   }
   @include respond(phone) {
-    background-image: url(../../assets/home/background-home-mobile.jpg);
+    background-image: url(../assets/home/background-home-mobile.jpg);
   }
 }
