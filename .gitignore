@@ -16,4 +16,7 @@
 .prettierignore
 node_modules
 data.json
+.parcel-cache
 README-template.md
+dist
+css

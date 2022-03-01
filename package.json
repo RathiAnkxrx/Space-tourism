@@ -4,9 +4,8 @@
   "description": "![Design preview for the Space tourism website coding challenge](./preview.jpg)",
   "default": "index.html",
   "scripts": {
-    "complie:sass": "node-sass sass/main.scss css/style.css -w",
-    "devserver": "live-server --port=8090",
-    "start": "npm-run-all --parallel devserver complie:sass"
+    "start": "parcel index.html",
+    "build": "parcel build index.html"
   },
   "author": "",
   "license": "ISC",
